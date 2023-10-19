@@ -8,7 +8,7 @@
   /* Gradients */
   --light-slate-blue-background: hsl(252, 100%, 67%);
   --light-royal-blue-background: hsl(241, 81%, 54%);
-  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --violet-blue-circle: #4e21ca;
   --persian-blue-circle: hsla(241, 72%, 46%, 0);
 
   /* Neutral Colors */
@@ -84,14 +84,14 @@ h4 {
   width: 150px;
   height: 150px;
 
-  background: linear-gradient(to top, var(--violet-blue-circle), var(--persian-blue-circle));
+  background: linear-gradient(to bottom, var(--violet-blue-circle), var(--persian-blue-circle));
   border-radius: 50%;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-  z-index: 1;
+  z-index: -1;
 }
 
 .score-number {
@@ -104,6 +104,7 @@ h4 {
   font-size: 12px;
 }
 .result-feedback {
+  max-width: 240px;
   text-align: center;
 }
 .feedback-title {
