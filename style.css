@@ -8,7 +8,7 @@
   /* Gradients */
   --light-slate-blue-background: hsl(252, 100%, 67%);
   --light-royal-blue-background: hsl(241, 81%, 54%);
-  --violet-blue-circle: #4e21ca;
+  --violet-blue-circle: hsl(256, 72%, 46%);
   --persian-blue-circle: hsla(241, 72%, 46%, 0);
 
   /* Neutral Colors */
@@ -49,7 +49,7 @@ h4 {
   z-index: -2;
 }
 .result-card {
-  background: linear-gradient(to bottom, var(--violet-blue-circle), var(--light-royal-blue-background));
+  background: linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
 
   border-radius: 20px;
   padding: 20px;
