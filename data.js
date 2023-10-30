@@ -1,4 +1,4 @@
-const dataContainer = document.querySelector("#data-container");
+const dataList = document.querySelector("#data-list");
 
 fetch("data.json")
   .then((response) => response.json())
@@ -21,6 +21,6 @@ fetch("data.json")
       itemDiv.appendChild(category);
       itemDiv.appendChild(score);
 
-      dataContainer.appendChild(itemDiv);
+      dataList.appendChild(itemDiv);
     });
   });
