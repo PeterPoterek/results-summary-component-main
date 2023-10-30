@@ -48,10 +48,16 @@ h4 {
   height: 100vh;
   z-index: -2;
 }
+.container-wrapper {
+  display: flex;
+
+  background-color: var(--white);
+  border-radius: 20px;
+}
 .result-card {
   background: linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
 
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 20px;
 
   display: flex;
@@ -61,7 +67,7 @@ h4 {
   gap: 20px;
 }
 .result-title {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 
   color: var(--light-lavender);
@@ -98,26 +104,26 @@ h4 {
 
 .score-number {
   text-align: center;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 700;
 }
 .score-out-of {
   color: var(--light-lavender);
 
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
 }
 .result-feedback {
   max-width: 230px;
   text-align: center;
 }
 .feedback-title {
-  font-size: 26px;
+  font-size: 25px;
   text-align: center;
 }
 .feedback-text {
   color: var(--light-lavender);
-  font-size: 14px;
+  font-size: 15px;
 
   text-align: center;
 
@@ -126,9 +132,6 @@ h4 {
 }
 
 .data-conatiner {
-  background-color: var(--white);
-  border-radius: 20px;
-
   display: flex;
   flex-direction: column;
 
