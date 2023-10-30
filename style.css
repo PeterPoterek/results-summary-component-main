@@ -145,10 +145,15 @@ h4 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .item {
   display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
-
+.item-wrapper {
+  display: flex;
+}
 .item img {
   width: 20px;
   height: 20px;
@@ -177,6 +182,7 @@ h4 {
   padding: 20px;
   border-radius: 14px;
 }
+
 .continue-button {
   color: var(--white);
   background-color: var(--dark-gray-blue);

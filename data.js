@@ -17,8 +17,12 @@ fetch("data.json")
       icon.src = item.icon;
       icon.alt = `${item.category} Icon`;
 
-      itemDiv.appendChild(icon);
-      itemDiv.appendChild(category);
+      const itemWrapper = document.createElement("div");
+
+      itemWrapper.append(icon, category);
+      itemWrapper.classList.add("item-wrapper");
+
+      itemDiv.appendChild(itemWrapper);
       itemDiv.appendChild(score);
 
       dataList.appendChild(itemDiv);
