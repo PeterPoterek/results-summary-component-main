@@ -1,4 +1,4 @@
-const dataContainer = document.getElementById("data-container");
+const dataContainer = document.querySelector("#data-container");
 
 fetch("data.json")
   .then((response) => response.json())
@@ -8,18 +8,18 @@ fetch("data.json")
       itemDiv.classList.add("item");
 
       const category = document.createElement("p");
-      category.textContent = `Category: ${item.category}`;
+      category.textContent = item.category;
 
       const score = document.createElement("p");
-      score.textContent = `Score: ${item.score}`;
+      score.textContent = `${item.score}/100`;
 
       const icon = document.createElement("img");
       icon.src = item.icon;
       icon.alt = `${item.category} Icon`;
 
+      itemDiv.appendChild(icon);
       itemDiv.appendChild(category);
       itemDiv.appendChild(score);
-      itemDiv.appendChild(icon);
 
       dataContainer.appendChild(itemDiv);
     });
